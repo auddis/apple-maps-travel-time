@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Apple Maps Travel Time",
+        "description": "Configure an Apple Maps commute or route sensor. Enter your Apple Developer Keys and Route details.",
+        "data": {
+          "name": "Integration / Sensor Name",
+          "team_id": "Apple Developer Team ID (10 chars)",
+          "key_id": "Apple MapKit Key ID (10 chars)",
+          "private_key": "Private Key (.p8 file text)",
+          "origin": "Origin (Entity ID or 'lat,lon')",
+          "destination": "Destination (Entity ID or 'lat,lon')",
+          "travel_mode": "Travel Mode",
+          "scan_interval": "Update Interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid Private Key or Apple Developer Credentials. Check Team ID, Key ID, and .p8 key format.",
+      "cannot_connect": "Failed to connect to Apple Maps Server API.",
+      "unknown": "An unexpected error occurred."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configure Apple Maps Route",
+        "description": "Update route origins, destinations, travel mode, or update intervals.",
+        "data": {
+          "origin": "Origin (Entity ID or 'lat,lon')",
+          "destination": "Destination (Entity ID or 'lat,lon')",
+          "travel_mode": "Travel Mode",
+          "scan_interval": "Update Interval (seconds)"
+        }
+      }
+    }
+  }
+}
